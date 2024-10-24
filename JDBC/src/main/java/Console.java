@@ -1,6 +1,4 @@
-package JDBC;
-
-import JDBC.model.Employee;
+import model.Employee;
 
 import java.util.List;
 import java.util.Scanner;
@@ -17,7 +15,7 @@ public class Console {
 
     public static void showOptions() {
         showMessageNewLine(SEARCH_BY_FIRST_NAME);
-        showMessageNewLine(SEARCH_BY_FIRST_NAME);
+        showMessageNewLine(SEARCH_BY_LAST_NAME);
         showMessageNewLine(SEARCH_BY_DEPARTMENT_NAME);
         showMessageNewLine(ADD_EMPLOYEE);
         showMessageNewLine(DELETE_EMPLOYEE_BY_ID);

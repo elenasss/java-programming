@@ -1,4 +1,4 @@
-package JDBC.model;
+package model;
 
 import JDBC.db.DBManager;
 
