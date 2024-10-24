@@ -1,7 +1,5 @@
-package JDBC;
-
-import JDBC.model.Employee;
-import JDBC.model.EmployeeDAO;
+import model.Employee;
+import model.EmployeeDAO;
 
 import java.sql.SQLException;
 import java.time.LocalDate;
@@ -70,9 +68,8 @@ public class Application {
     }
 
     private void searchByDepartmentName(String departmentName) {
-        List<Employee> employees = null;
         try {
-            employees = EmployeeDAO.searchByDepartmentName(departmentName);
+            List<Employee> employees = EmployeeDAO.searchByDepartmentName(departmentName);
             Console.printResultOnConsole(employees);
         } catch (SQLException e) {
             Console.showErrorMessage();
